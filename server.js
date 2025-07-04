@@ -326,7 +326,7 @@ app.delete('/usuarios/:id', async (req, res) => {
 
 //#region S3
 AWS.config.update({
-    region: process.env.REGION
+    region: process.env.REGION,
     accessKeyId: process.env.ACCESS_KEY_ID,
     secretAccessKey: process.env.SECRET_ACCESS_KEY,
     sessionToken: process.env.SESSION_TOKEN,
